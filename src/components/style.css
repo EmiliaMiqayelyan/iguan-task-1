@@ -1,0 +1,127 @@
+@import url('https://fonts.cdnfonts.com/css/apercu');
+
+.header-main {
+    display: flex;
+    width: 100%;
+    margin: 12px auto;
+    padding: 0px 52px;
+    width: 1479;
+    height: 71;
+}
+
+.header-input {
+    font-size: 14px;
+    height: 48px;
+    width: 1014px;
+    background-color: #E9E9E9;
+    border: none;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+.input-text {
+    position: absolute;
+    top: 25px;
+    right: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 23px;
+    width: 200px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #A7A7A7;
+    padding: 45px;
+}
+
+.text {
+    /* text-align: center; */
+    width: 30px;
+    height: 16px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.searchicon {
+    position: absolute;
+    top: 25px;
+    left: 110px;
+    height: 20px;
+    width: 20px;
+    color: #A7A7A7;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding: 0px 52px;
+    margin: 48px;
+}
+
+.copyicon,
+.shareicon {
+    height: 23px;
+    width: 23px;
+    margin: 15px;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.login,
+.signup {
+    font-family: 'Apercu', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-dark {
+    width: 95px;
+    height: 48px;
+}
+
+.btn-outline-dark {
+    width: 159px;
+    height: 48px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 290px;
+    height: 48px;
+}
+
+.user-part{
+    display: flex;
+    justify-content: space-between;
+    width: 503px;
+    height: 48px;
+}
+
+.input-select{
+    border: none;
+    background-color: #E9E9E9;
+    width: 150px;
+    font-size: 14px;
+}
+
+.user-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 48px;
+}

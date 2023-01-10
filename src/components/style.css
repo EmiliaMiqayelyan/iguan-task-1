@@ -1,18 +1,54 @@
 @import url('https://fonts.cdnfonts.com/css/apercu');
 
+* {
+    margin: 0;
+    font-family: 'Apercu', sans-serif;
+}
+
+/* 
+.wrapper{
+    background-color: #F8F8F8;
+} */
+
 .header-main {
+    margin-top: 12px;
     display: flex;
     width: 100%;
-    margin: 12px auto;
     padding: 0px 52px;
     width: 1479;
     height: 71;
 }
 
+.header-text {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.header-input-part {
+    font-size: 14px;
+    height: 48px;
+    width: 953px;
+    background-color: #E9E9E9;
+    border: none;
+    border-radius: 8px;
+    margin-left: 14px;
+}
+
+.searchicon {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    height: 20px;
+    width: 20px;
+    font-size: large;
+    color: #A7A7A7;
+}
+
 .header-input {
     font-size: 14px;
     height: 48px;
-    width: 1014px;
+    width: 710px;
     background-color: #E9E9E9;
     border: none;
     border-radius: 7px;
@@ -20,14 +56,16 @@
 }
 
 .input-text {
+    font-family: "apercu", sans-serif;
     position: absolute;
     top: 25px;
-    right: 700px;
+    right: 480px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 23px;
     width: 200px;
+    padding: 0px 30px 0px 0px;
 }
 
 ::placeholder {
@@ -36,47 +74,30 @@
     padding: 45px;
 }
 
-.text {
-    /* text-align: center; */
-    width: 30px;
-    height: 16px;
-    font-size: 22px;
-    font-weight: 900;
+.input-select {
+    font-size: 14px;
+    font-weight: 200;
+    font-weight: bold;
+    border: none;
+    background-color: #E9E9E9;
+    width: 150px;
 }
 
-.searchicon {
-    position: absolute;
-    top: 25px;
-    left: 110px;
-    height: 20px;
-    width: 20px;
-    color: #A7A7A7;
-}
-
-.icons {
+.user-part {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
-    padding: 0px 52px;
-    margin: 48px;
+    justify-content: space-between;
+    width: 400px;
+    height: 48px;
+    margin: 0px 12px;
+    font-size: 14px;
 }
 
-.copyicon,
-.shareicon {
-    height: 23px;
-    width: 23px;
-    margin: 15px;
-}
-
-.titles {
+.user-form {
     display: flex;
-    justify-content: center;
-
-}
-
-.title {
-    font-weight: bolder;
-    font-size: 80px;
+    justify-content: space-around;
+    align-items: center;
+    width: 117px;
+    height: 48px;
 }
 
 .login,
@@ -85,6 +106,14 @@
     font-size: large;
     font-weight: bold;
     font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 265px;
+    height: 48px;
+    font-size: small;
 }
 
 .btn-dark {
@@ -97,31 +126,45 @@
     height: 48px;
 }
 
-.buttons{
+.icons {
     display: flex;
-    justify-content: space-evenly;
-    width: 290px;
-    height: 48px;
+    justify-content: flex-end;
+    padding: 0px 52px;
+    margin: 0px 0px 46px;
+    margin-top: 42px;
 }
 
-.user-part{
-    display: flex;
-    justify-content: space-between;
-    width: 503px;
-    height: 48px;
+.copyicon,
+.shareicon {
+    height: 23px;
+    width: 23px;
+    margin: 15px;
 }
 
-.input-select{
-    border: none;
-    background-color: #E9E9E9;
-    width: 150px;
-    font-size: 14px;
+.header {
+    text-align: center;
 }
 
-.user-form{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 150px;
-    height: 48px;
+.header-h6 {
+    font-weight: 400;
+}
+
+.header-h1 {
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.header-h4 {
+    font-weight: bold;
+}
+
+.middle{
+    width: 1415px;
+    height: 166px;
+    margin: 0px 0px 43px;
+}
+
+.info{
+    font-size: 40px;
 }

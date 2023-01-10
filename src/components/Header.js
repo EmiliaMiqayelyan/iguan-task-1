@@ -8,23 +8,29 @@ import "./style.css";
 
 function Header() {
     return (
-        <div>
+        <div className="wrapper">
             <div className="header-main">
-                <span className="text">W.</span>
-                    <input className="header-input" placeholder="Search websites, elements, courses..." />
-                    <TbSearch className="searchicon" />
-                <div className="input-text">
+                <span className="header-text">W.</span>
+                {/* <img className="header-img" src="https://i.pinimg.com/originals/01/d3/76/01d376f2d40ece5ad375fa245ff759d3.png" alt="" /> */}
+                <div className="header-input-part">
                     <div>
-                        <span style={{ fontSize: "11px" }}>IN</span>
+                        <TbSearch className="searchicon" />
+                        <input className="header-input" placeholder="Search websites, elements, courses..." />
                     </div>
-                    <div>
-                        <select className="input-select">
-                            <option>
-                                Inspiration
-                            </option>
-                        </select>
+                    <div className="input-text">
+                        <div>
+                            <span style={{ fontSize: "11px" }}>IN</span>
+                        </div>
+                        <div>
+                            <select className="input-select">
+                                <option>
+                                    Inspiration
+                                </option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+
                 <div className="user-part">
                     <div className="user-form">
                         <span className="login">Log in</span>
@@ -42,11 +48,16 @@ function Header() {
                 <SlShareAlt className="shareicon" />
             </div>
 
-            <div className="titles">
-                <p>Honorable Mention - Sep 22, 2022</p>
-            </div>
-            <div className="titles">
-                <p className="title">LAK GALLERY</p>
+            <div className="header">
+                <div>
+                    <h6 className="header-h6">Honorable Mention - Sep 22, 2022</h6>
+                </div>
+                <div>
+                    <h1 className="header-h1">LAK GALLERY</h1>
+                </div>
+                <div>
+                    <h4 className="header-h4">Tinloof</h4>
+                </div>
             </div>
         </div>
     )

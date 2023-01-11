@@ -31,7 +31,7 @@ function Footer() {
                 <div className="next-part">
                     <span className="next-part-span">Next Conferences</span>
                     <FaRegCalendarMinus />
-                    <span> <strong>Amsterdam</strong> and <strong>Toronto</strong></span>
+                    <span> <a className="footer-a">Amsterdam</a> and <a className="footer-a">Toronto</a></span>
                 </div>
             </div>
             <hr className="footer-hr" />

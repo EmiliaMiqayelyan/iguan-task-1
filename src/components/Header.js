@@ -7,7 +7,11 @@ import Button from 'react-bootstrap/Button';
 import "./style.css";
 import "../App.css";
 
+// import { useState } from 'react';
+// import Modal from 'react-bootstrap/Modal';
+
 function Header() {
+    // const [show, setShow] = useState(false);
     return (
         <div className="wrapper">
             <div className="header-main">
@@ -17,6 +21,27 @@ function Header() {
                     <div>
                         <TbSearch className="searchicon" />
                         <input className="header-input" placeholder="Search websites, elements, courses..." />
+
+                        {/* <>
+                        onClick={() => setShow(true)}
+                            <Modal
+                                show={show}
+                                onHide={() => setShow(false)}
+                                dialogClassName="modal-90w"
+                                aria-labelledby="example-custom-modal-styling-title"
+                            >
+                                <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Custom Modal Styling
+                                    </Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <p>
+                                        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                                        commodi aspernatur enim, consectetur.
+                                    </p>
+                                </Modal.Body>
+                            </Modal></> */}
                     </div>
                     <div className="input-text">
                         <div>
@@ -59,7 +84,7 @@ function Header() {
                 <div className="header-bottom-part">
                     <div className="header-bottom">
                         <img className="header-img" src='https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/1079787/63061260a58a9042023841.png' alt='' />
-                        <h4 className="header-h4">Tinloof</h4>
+                        <a className="header-a">Tinloof</a>
                         <sup>INT</sup>
                     </div>
                 </div>

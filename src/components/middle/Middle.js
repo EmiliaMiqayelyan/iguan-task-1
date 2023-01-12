@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import "./middle.css";
 
 function Middle() {
     return (

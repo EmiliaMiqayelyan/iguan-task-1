@@ -1,5 +1,4 @@
-import "./style.css";
-import "../App.css";
+import "./websites.css";
 import Button from 'react-bootstrap/Button';
 
 

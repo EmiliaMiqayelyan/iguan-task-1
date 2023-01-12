@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/Header";
-import Middle from "./components/Middle";
-import Websites from "./components/Websites";
-import Footer from "./components/Footer";
-import Table from './components/Table';
+import Header from "./components/header/Header";
+import Middle from "./components/middle/Middle";
+import Websites from "./components/website/Websites";
+import Footer from "./components/footer/Footer";
+import Table from './components/table/Table';
 
 function App() {
   return (

@@ -1,5 +1,4 @@
-import "./style.css";
-import "../App.css";
+import "./table.css";
 
 function Table() {
     return (

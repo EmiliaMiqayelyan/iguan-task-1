@@ -3,3 +3,10 @@ body {
     background-color: #f8f8f8 !important;
     padding: 0px 52px;
 }
+
+@import url('https://fonts.cdnfonts.com/css/apercu');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}

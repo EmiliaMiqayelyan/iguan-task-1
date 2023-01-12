@@ -6,9 +6,9 @@
     position: relative;
     z-index: 1;
 }
-/* 
-@media screen and (max-width: 767px){
-    body{
+
+@media screen and (max-width: 767px) {
+    body {
         padding: 0px 24px;
     }
 
@@ -16,22 +16,22 @@
         display: none !important;
     }
 
-    .header-main{
+    .header-main {
         width: 720px !important;
     }
 
-    .header-input-part{
+    .header-input-part {
         width: 540px !important;
     }
 
-    .header-input{
+    .header-input {
         width: 630px !important;
     }
 
-    .input-text{
+    .input-text {
         left: -320px !important;
     }
-} */
+}
 
 .header-text {
     font-size: 22px;
@@ -82,7 +82,7 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    left: 150px;
+    left: 100px;
     position: relative;
     z-index: 1;
 }
@@ -198,7 +198,8 @@ input:focus {
     text-decoration: none;
 }
 
-.header-link, .footer-link {
+.header-link,
+.footer-link {
     background:
         linear-gradient(to right,
             #B7B7B7,
@@ -213,7 +214,8 @@ input:focus {
     transition: background-size 400ms;
 }
 
-.header-link:hover, .footer-link:hover {
+.header-link:hover,
+.footer-link:hover {
     background-size: 0 3px, 100% 3px;
     color: black;
 }
@@ -261,12 +263,12 @@ sup {
     overflow: hidden;
 }
 
-.select-div > div {
-   width: auto;
+.select-div>div {
+    width: auto;
     margin-top: 10px;
 }
 
-.select-div > div:hover {
+.select-div>div:hover {
     color: #808080;
 }
 
@@ -295,7 +297,7 @@ sup {
 }
 
 .modal-img-p {
-    color:#fff;
+    color: #fff;
     font-size: 12px;
     padding-top: 10px;
 }
@@ -306,7 +308,7 @@ sup {
     justify-content: space-between;
 }
 
-.modal-btn > button {
+.modal-btn>button {
     margin-top: 20px;
     height: 30px;
     border-radius: 50px;

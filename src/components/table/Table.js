@@ -17,7 +17,7 @@ function Table() {
                 </div>
             </div>
             <hr className="table-hr" />
-            <div className="table-parts" style={{backgroundColor: "#F3F3F3"}}>
+            <div className="table-parts" style={{ backgroundColor: "#F3F3F3" }}>
                 <div className="table-part1">
                     <img className="table-img" src="https://mir-s3-cdn-cf.behance.net/user/276/8120bf724192.632a1f946179c.png" alt="" />
                     <div>
@@ -30,7 +30,7 @@ function Table() {
                     <div>8</div>
                     <div>8</div>
                     <div>9</div>
-                    <div style={{ backgroundColor: '#e9e9e9', fontWeight: "bold" }}>8.10</div>
+                    <div className="part1-div">8.10</div>
                 </div>
             </div>
             <hr className="table-hr" />
@@ -47,11 +47,11 @@ function Table() {
                     <div>7</div>
                     <div>7</div>
                     <div>9</div>
-                    <div style={{ backgroundColor: '#e9e9e9', fontWeight: "bold" }}>8.00</div>
+                    <div className="part1-div">8.00</div>
                 </div>
             </div>
             <hr className="table-hr" />
-            <div className="table-parts" style={{backgroundColor: "#F3F3F3"}}>
+            <div className="table-parts" style={{ backgroundColor: "#F3F3F3" }}>
                 <div className="table-part1">
                     <img className="table-img" src="https://static.tildacdn.com/tild6332-3735-4838-b962-653632313064/IMG_3861.JPG" alt="" />
                     <div>
@@ -64,7 +64,7 @@ function Table() {
                     <div>9</div>
                     <div>7</div>
                     <div>10</div>
-                    <div style={{ backgroundColor: '#e9e9e9', fontWeight: "bold" }}>9.10</div>
+                    <div className="part1-div">9.10</div>
                 </div>
             </div>
             <hr className="table-hr" />
@@ -81,7 +81,7 @@ function Table() {
                     <div>8</div>
                     <div>8</div>
                     <div>9</div>
-                    <div style={{ backgroundColor: '#e9e9e9', fontWeight: "bold" }}>7.70</div>
+                    <div className="part1-div">7.70</div>
                 </div>
             </div>
             <hr className="table-hr" />
@@ -98,7 +98,7 @@ function Table() {
                     <div>7</div>
                     <div>7</div>
                     <div>6</div>
-                    <div style={{ backgroundColor: '#e9e9e9', fontWeight: "bold" }}>6.50</div>
+                    <div className="part1-div">6.50</div>
                 </div>
             </div>
             <hr className="table-hr" />

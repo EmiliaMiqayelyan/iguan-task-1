@@ -2,6 +2,7 @@
     margin-top: 12px;
     display: flex;
     width: 100%;
+    max-width: 1920px;
     justify-content: center;
     position: relative;
     z-index: 1;
@@ -15,21 +16,11 @@
     .buttons {
         display: none !important;
     }
+}
 
-    .header-main {
-        width: 720px !important;
-    }
-
-    .header-input-part {
-        width: 540px !important;
-    }
-
-    .header-input {
-        width: 630px !important;
-    }
-
-    .input-text {
-        left: -320px !important;
+@media screen and (max-width: 886px){
+    .input-text{
+        display: none !important;
     }
 }
 
@@ -44,7 +35,7 @@
     font-size: 14px;
     height: 48px;
     padding: 0 15px;
-    width: 1014px;
+    width: 100%;
     background-color: #E9E9E9;
     border: none;
     border-radius: 8px;
@@ -66,11 +57,12 @@ input:focus {
 .icon-input {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .header-input {
     font-size: 14px;
-    width: 630px;
+    width: 100%;
     border: none;
     padding: 12px 0;
     border-radius: 7px;
@@ -81,8 +73,9 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
-    left: 100px;
+    /* width: 200px; */
+    left: 0;
+    gap: 20px;
     position: relative;
     z-index: 1;
 }
@@ -317,4 +310,59 @@ sup {
     align-items: center;
     padding: 0px 12px;
     border-color: #7A7A7A;
+}
+
+.navbar-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.navbar-link {
+    font-weight: lighter;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-link {
+    background:
+        linear-gradient(to right,
+            #B7B7B7,
+            #B7B7B7),
+        linear-gradient(to right,
+            rgb(0, 0, 0),
+            rgb(0, 0, 0),
+            rgb(0, 0, 0));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navbar-link:hover {
+    background-size: 0 3px, 100% 3px;
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #f8f8f8;
+    margin-top: -12px;
+}
+
+.navbar-icon-part{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
 }

@@ -1,6 +1,12 @@
 import "./table.css";
+import Button from 'react-bootstrap/Button';
+import { useState } from "react";
+
 
 function Table() {
+
+    const [table, setTable] = useState(false);
+
     return (
         <div className="table">
             <div className="table-top">
@@ -84,24 +90,100 @@ function Table() {
                     <div className="part1-div">7.70</div>
                 </div>
             </div>
-            <hr className="table-hr" />
-            <div className="table-parts last">
-                <div className="table-part1">
-                    <img className="table-img" src="https://assets.awwwards.com/awards/avatar/1007231/61051e0b25740821874024.jpg" alt="" />
-                    <div>
-                        <p><strong>Félix Hieronimus  </strong> <i>* from</i> <strong>France</strong></p>
-                        <span>felixhieronimus.com</span>
+
+            <hr style={{ display: table ? 'none' : 'block' }} className="table-hr" />
+
+             { !table && 
+                <div className="table-parts-last">
+                    <div className="table-part1">
+                        <img className="table-img" src="https://assets.awwwards.com/awards/avatar/1007231/61051e0b25740821874024.jpg" alt="" />
+                        <div>
+                            <p><strong>Félix Hieronimus  </strong> <i>* from</i> <strong>France</strong></p>
+                            <span>felixhieronimus.com</span>
+                        </div>
+                    </div>
+                    <div className="part1">
+                        <div>6</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>6</div>
+                        <div className="part1-div">6.50</div>
                     </div>
                 </div>
-                <div className="part1">
-                    <div>6</div>
-                    <div>7</div>
-                    <div>7</div>
-                    <div>6</div>
-                    <div className="part1-div">6.50</div>
+             }          
+
+            <Button style={{ display: table ? 'none' : 'block' }} onClick={() => setTable(!table)} className="add-btn" variant="outline-dark">...</Button>
+
+           <div className="hidden-table" style={{ display: table ? 'block' : 'none' }}>
+            <div className="table-hidden-parts" style={{ backgroundColor: "#F3F3F3" }}>
+                    <div className="table-hidden-part1">
+                        <img className="table-hidden-img" src="https://assets.awwwards.com/awards/avatar/1007231/61051e0b25740821874024.jpg" alt="" />
+                        <div>
+                            <p><strong>Félix Hieronimus  </strong> <i>* from</i> <strong>France</strong></p>
+                            <span>felixhieronimus.com</span>
+                        </div>
+                    </div>
+                    <div className="hidden-part1">
+                        <div>6</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>6</div>
+                        <div className="hidden-part1-div">6.50</div>
+                    </div>
                 </div>
-            </div>
-            <hr className="table-hr" />
+                <hr className="table-hr" />
+                <div className="table-hidden-parts">
+                    <div className="table-hidden-part1">
+                        <img className="table-hidden-img" src="https://media.licdn.com/dms/image/C4E03AQEiXaffYfrZ0g/profile-displayphoto-shrink_100_100/0/1653078149679?e=1678320000&v=beta&t=FcP_ba3gYK4OrBxLHSB-BA0Z9vL-hAwum-PoDiWKF6Q" alt="" />
+                        <div>
+                            <p><strong>Erwan Le Roch</strong> <i>* from</i> <strong>France</strong></p>
+                            <span>felixhieronimus.com</span>
+                        </div>
+                    </div>
+                    <div className="hidden-part1">
+                        <div>6</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>6</div>
+                        <div className="hidden-part1-div">6.50</div>
+                    </div>
+                </div>
+                <hr className="table-hr" />
+                <div className="table-hidden-parts"   style={{ backgroundColor: "#F3F3F3" }}>
+                    <div className="table-hidden-part1">
+                        <img className="table-hidden-img" src="https://assets.awwwards.com/awards/avatar/967413/610ba96922f65561003896.jpeg" alt="" />
+                        <div>
+                            <p><strong>Irene Butenko</strong> <i>from</i> <strong>United States</strong></p>
+                            <span>irene-butenko.com</span>
+                        </div>
+                    </div>
+                    <div className="hidden-part1">
+                        <div>6</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>6</div>
+                        <div className="hidden-part1-div">6.50</div>
+                    </div>
+                </div>
+                <hr className="table-hr" />
+                <div className="table-hidden-parts">
+                    <div className="table-hidden-part1">
+                        <img className="table-hidden-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyjb-p04EpN7eMP4FOZ1C43J0rMCUWIoB5yG_NwiobA&s" alt="" />
+                        <div>
+                            <p><strong>Arnaud Saunier</strong> <i>from</i> <strong>France</strong></p>
+                            <span>marindessables.fr</span>
+                        </div>
+                    </div>
+                    <div className="hidden-part1">
+                        <div>6</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>6</div>
+                        <div className="hidden-part1-div">6.50</div>
+                    </div>
+                </div>
+                <hr className="table-hr" />
+           </div>
         </div>
     )
 }

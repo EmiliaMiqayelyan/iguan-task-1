@@ -80,7 +80,7 @@ input:focus {
     z-index: 1;
 }
 
-::placeholder {
+.header-input::placeholder {
     font-size: 14px;
     padding-left: 10px;
 }
@@ -112,12 +112,13 @@ input:focus {
     height: 48px;
 }
 
-.login,
-.signup {
+.in,
+.up {
     font-family: 'Apercu', sans-serif;
     font-size: large;
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .buttons {

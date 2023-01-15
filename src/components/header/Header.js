@@ -7,47 +7,46 @@ import { IoIosArrowUp } from "react-icons/io";
 import Button from 'react-bootstrap/Button';
 import "./header.css";
 import { useState, useEffect } from "react";
-
 import useOutsideClick from "./useOutsideClick";
+import LogIn from "../login/LogIn";
 
 
 function Header() {
 
     const [toggle, setToggle] = useState(false);
     const [modal, setModal] = useState(false);
+    const [login, setLogin] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [navbarShow, setNavbarShow] = useState(false);
 
-    // const btnRef= useRef()
-
     const controlNavbar = () => {
-        if (typeof window !== 'undefined') { 
-           if (window.scrollY < 500) {
-            setNavbarShow(false)
-           } else {
-            setNavbarShow(true)
-           }
-
-          setLastScrollY(window.scrollY); 
-        }
-      };
-    
-      useEffect(() => {
         if (typeof window !== 'undefined') {
-          window.addEventListener('scroll', controlNavbar);
+            if (window.scrollY < 500) {
+                setNavbarShow(false)
+            } else {
+                setNavbarShow(true)
+            }
 
-          return () => {
-            window.removeEventListener('scroll', controlNavbar);
-          };
+            setLastScrollY(window.scrollY);
         }
-      }, [lastScrollY]);
+    };
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', controlNavbar);
+
+            return () => {
+                window.removeEventListener('scroll', controlNavbar);
+            };
+        }
+    }, [lastScrollY]);
 
 
     const handleClick = () => {
         setToggle(!toggle);
     };
 
-    
+
     const ref = useRef();
 
     useOutsideClick(ref, () => {
@@ -60,16 +59,16 @@ function Header() {
                 <div className="navbar-part">
                     <h6>LAK Gallery</h6>
                     <span>by</span>
-                        <img className="navbar-img" src='https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/1079787/63061260a58a9042023841.png' alt='' />
-                        <span className="navbar-link">Tinloof</span>
-                        <sup>INT</sup>
+                    <img className="navbar-img" src='https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/1079787/63061260a58a9042023841.png' alt='' />
+                    <span className="navbar-link">Tinloof</span>
+                    <sup>INT</sup>
                 </div>
                 <div className="navbar-icon-part">
-                        <MdContentCopy className="copyicon" />
-                        <FiShare2 className="shareicon" />
-                        <SlShareAlt className="shareicon" />
+                    <MdContentCopy className="copyicon" />
+                    <FiShare2 className="shareicon" />
+                    <SlShareAlt className="shareicon" />
                 </div>
-            
+
             </div>
             <div className="header-main">
                 <span className="header-text">W.</span>
@@ -138,14 +137,17 @@ function Header() {
 
                 <div className="user-part">
                     <div className="user-form">
-                        <span className="login">Log in</span>
-                        <span className="signup">Sign Up</span>
+                        <span onClick={() => setLogin(!login)} className="in">Log in</span>
+                        <span onClick={() => setLogin(!login)} className="up">Sign Up</span>
                     </div>
                     <div className="buttons">
                         <Button variant="dark">Be Pro</Button>
                         <Button variant="outline-dark">Submit Website</Button>
                     </div>
                 </div>
+            </div>
+            <div style={{ display: login ? 'block' : 'none'}} >
+                <LogIn />
             </div>
             <div className="icons">
                 <MdContentCopy className="copyicon" />
@@ -157,7 +159,7 @@ function Header() {
                 <div>
                     <h6 className="header-h6">Honorable Mention - Sep 22, 2022</h6>
                 </div>
-                <div style={{width: "100%"}}>
+                <div style={{ width: "100%" }}>
                     <h1 className="header-h1">LAK GALLERY</h1>
                 </div>
                 <div className="header-bottom-part">

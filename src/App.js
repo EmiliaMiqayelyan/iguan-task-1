@@ -1,18 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/header/Header";
-import Middle from "./components/middle/Middle";
-import Websites from "./components/website/Websites";
 import Footer from "./components/footer/Footer";
-import Table from './components/table/Table';
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Middle />
-      <Websites />
-      <Table />
+      <Main />
       <Footer />
     </div>
   );

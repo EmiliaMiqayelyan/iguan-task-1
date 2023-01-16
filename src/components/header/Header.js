@@ -8,8 +8,7 @@ import Button from 'react-bootstrap/Button';
 import "./header.css";
 import { useState, useEffect } from "react";
 import useOutsideClick from "./useOutsideClick";
-import LogIn from "../login/LogIn";
-
+import LoginModal from "../loginmodal/LoginModal";
 
 function Header() {
 
@@ -46,6 +45,10 @@ function Header() {
         setToggle(!toggle);
     };
 
+    const hideLogin = () => {
+        setLogin(false)
+    }
+
 
     const ref = useRef();
 
@@ -54,7 +57,7 @@ function Header() {
     });
 
     return (
-        <div className="wrapper">
+        <div className="header-inner">
             <div className="navbar" style={{ opacity: navbarShow ? '1' : '0' }}>
                 <div className="navbar-part">
                     <h6>LAK Gallery</h6>
@@ -147,7 +150,7 @@ function Header() {
                 </div>
             </div>
             <div style={{ display: login ? 'block' : 'none'}} >
-                <LogIn />
+                <LoginModal show={login} hideModal={hideLogin}/>
             </div>
             <div className="icons">
                 <MdContentCopy className="copyicon" />

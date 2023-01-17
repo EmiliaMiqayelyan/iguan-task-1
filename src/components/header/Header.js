@@ -4,6 +4,7 @@ import { MdContentCopy } from "react-icons/md";
 import { FiShare2 } from "react-icons/fi";
 import { SlShareAlt } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
+import { RiUserFollowLine } from "react-icons/ri";
 import Button from 'react-bootstrap/Button';
 import "./header.css";
 import { useState, useEffect } from "react";
@@ -57,14 +58,16 @@ function Header() {
     });
 
     return (
-        <div className="header-inner">
+        <div>
             <div className="navbar" style={{ opacity: navbarShow ? '1' : '0' }}>
                 <div className="navbar-part">
                     <h6>LAK Gallery</h6>
-                    <span>by</span>
-                    <img className="navbar-img" src='https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/1079787/63061260a58a9042023841.png' alt='' />
-                    <span className="navbar-link">Tinloof</span>
-                    <sup>INT</sup>
+                    <div className="navbar-header-part">
+                        <span>by</span>
+                        <img className="navbar-img" src='https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/1079787/63061260a58a9042023841.png' alt='' />
+                        <span className="navbar-link">Tinloof</span>
+                        <sup>INT</sup>
+                    </div>
                 </div>
                 <div className="navbar-icon-part">
                     <MdContentCopy className="copyicon" />
@@ -73,43 +76,53 @@ function Header() {
                 </div>
 
             </div>
-            <div className="header-main">
-                <span className="header-text">W.</span>
-                <div className="header-input-part">
-                    <div className="icon-input">
+            <div className="header-inner">
+                <div className="header-main">
+                    <span className="header-text">W.</span>
+                    <div className="header-input-part">
+                        <div className="icon-input">
 
-                        <TbSearch className="searchicon" />
-                        <input ref={ref} onClick={() => setModal(prev => !prev)} className="header-input" placeholder="Search websites, elements, courses..." />
+                            <TbSearch className="searchicon" />
+                            <input ref={ref} onClick={() => setModal(prev => !prev)} className="header-input" placeholder="Search websites, elements, courses..." />
 
-                        <div style={{ display: modal ? 'block' : 'none' }} className="input-modal">
-                            <div className="modal-part">
+                            <div style={{ display: modal ? 'block' : 'none' }} className="input-modal">
+                                <div className="modal-part">
                                 <span>featured in Awwwards</span>
 
                                 <div className="img-part">
-                                    <div>
-                                        <img className="modal-img" src="https://assets.awwwards.com/assets/redesign/images/header/search/featured/1.jpg" alt="" />
-                                        <p className="modal-img-p">Sites of the Day</p>
+                                    <div className="img-part-1">
+                                        <div>
+                                            <img className="modal-img" src="https://assets.awwwards.com/assets/redesign/images/header/search/featured/1.jpg" alt="" />
+                                            <p className="modal-img-p">Sites of the Day</p>
+                                        </div>
+                                        <div>
+                                            <img className="modal-img" src="https://apptech.com.tr/wp-content/uploads/2019/11/types-of-websites.jpg" alt="" />
+                                            <p className="modal-img-p">Websites</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <img className="modal-img" src="https://apptech.com.tr/wp-content/uploads/2019/11/types-of-websites.jpg" alt="" />
-                                        <p className="modal-img-p">Websites</p>
+                                    <div className="img-part-2">
+                                        <div>
+                                            <img className="modal-img" src="http://www.designhill.com/design-blog/wp-content/uploads/2018/12/6_blog.jpg" alt="" />
+                                            <p className="modal-img-p">Elements</p>
+                                        </div>
+                                        <div>
+                                            <img className="modal-img" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_933383882_2000133420009280345_410292.jpg" alt="" />
+                                            <p className="modal-img-p">Courses</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <img className="modal-img" src="http://www.designhill.com/design-blog/wp-content/uploads/2018/12/6_blog.jpg" alt="" />
-                                        <p className="modal-img-p">Elements</p>
-                                    </div>
-                                    <div>
-                                        <img className="modal-img" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_933383882_2000133420009280345_410292.jpg" alt="" />
-                                        <p className="modal-img-p">Courses</p>
-                                    </div>
+                                    
                                 </div>
 
                                 <span>Best Tags</span>
                                 <div className="modal-btn">
-                                    <Button variant="outline-light">Animation</Button>
-                                    <Button variant="outline-light">Portfolio</Button>
-                                    <Button variant="outline-light">404 Pages</Button>
-                                    <Button variant="outline-light">Clean</Button>
+                                    <div className="modal-btn-part1">
+                                        <Button variant="outline-light">Animation</Button>
+                                        <Button variant="outline-light">Portfolio</Button>
+                                    </div>
+                                   <div className="modal-btn-part2">
+                                        <Button variant="outline-light">404 Pages</Button>
+                                        <Button variant="outline-light">Clean</Button>
+                                   </div>
                                 </div>
 
                             </div>
@@ -143,6 +156,7 @@ function Header() {
                         <span onClick={() => setLogin(!login)} className="in">Log in</span>
                         <span onClick={() => setLogin(!login)} className="up">Sign Up</span>
                     </div>
+                    <RiUserFollowLine className="user-icon" onClick={() => setLogin(!login)} />
                     <div className="buttons">
                         <Button variant="dark">Be Pro</Button>
                         <Button variant="outline-dark">Submit Website</Button>
@@ -175,6 +189,8 @@ function Header() {
 
             </div>
         </div>
+        </div>
+        
     )
 }
 

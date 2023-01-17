@@ -31,13 +31,13 @@ function Table() {
                         <span>popwebdesign.net</span>
                     </div>
                 </div>
-                <div className="part1">
-                    <div>8</div>
-                    <div>8</div>
-                    <div>8</div>
-                    <div>9</div>
+                    <div className="part1">
+                        <div>8</div>
+                        <div>8</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
                     <div className="part1-div">8.10</div>
-                </div>
             </div>
             <hr className="table-hr" />
             <div className="table-parts">
@@ -48,13 +48,13 @@ function Table() {
                         <span>eziocreative.com</span>
                     </div>
                 </div>
-                <div className="part1">
-                    <div>8</div>
-                    <div>7</div>
-                    <div>7</div>
-                    <div>9</div>
+                    <div className="part1">
+                        <div>8</div>
+                        <div>7</div>
+                        <div>7</div>
+                        <div>9</div>
+                    </div>
                     <div className="part1-div">8.00</div>
-                </div>
             </div>
             <hr className="table-hr" />
             <div className="table-parts" style={{ backgroundColor: "#F3F3F3" }}>
@@ -65,13 +65,13 @@ function Table() {
                         <span>westavenueagency.com</span>
                     </div>
                 </div>
-                <div className="part1">
-                    <div>10</div>
-                    <div>9</div>
-                    <div>7</div>
-                    <div>10</div>
+                    <div className="part1">
+                        <div>10</div>
+                        <div>9</div>
+                        <div>7</div>
+                        <div>10</div>
+                    </div>
                     <div className="part1-div">9.10</div>
-                </div>
             </div>
             <hr className="table-hr" />
             <div className="table-parts">
@@ -82,18 +82,18 @@ function Table() {
                         <span>deviantart.com</span>
                     </div>
                 </div>
-                <div className="part1">
-                    <div>7</div>
-                    <div>8</div>
-                    <div>8</div>
-                    <div>9</div>
+                    <div className="part1">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
                     <div className="part1-div">7.70</div>
-                </div>
             </div>
 
             <hr style={{ display: table ? 'none' : 'block' }} className="table-hr" />
 
-             { !table && 
+            {!table &&
                 <div className="table-parts-last">
                     <div className="table-part1">
                         <img className="table-img" src="https://assets.awwwards.com/awards/avatar/1007231/61051e0b25740821874024.jpg" alt="" />
@@ -102,20 +102,20 @@ function Table() {
                             <span>felixhieronimus.com</span>
                         </div>
                     </div>
-                    <div className="part1">
-                        <div>6</div>
-                        <div>7</div>
-                        <div>7</div>
-                        <div>6</div>
+                        <div className="part1">
+                            <div>6</div>
+                            <div>7</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
                         <div className="part1-div">6.50</div>
-                    </div>
                 </div>
-             }          
+            }
 
             <Button style={{ display: table ? 'none' : 'block' }} onClick={() => setTable(!table)} className="add-btn" variant="outline-dark">...</Button>
 
-           <div className="hidden-table" style={{ display: table ? 'block' : 'none' }}>
-            <div className="table-hidden-parts" style={{ backgroundColor: "#F3F3F3" }}>
+            <div className="hidden-table" style={{ display: table ? 'block' : 'none' }}>
+                <div className="table-hidden-parts" style={{ backgroundColor: "#F3F3F3" }}>
                     <div className="table-hidden-part1">
                         <img className="table-hidden-img" src="https://assets.awwwards.com/awards/avatar/1007231/61051e0b25740821874024.jpg" alt="" />
                         <div>
@@ -123,13 +123,13 @@ function Table() {
                             <span>felixhieronimus.com</span>
                         </div>
                     </div>
-                    <div className="hidden-part1">
-                        <div>6</div>
-                        <div>7</div>
-                        <div>7</div>
-                        <div>6</div>
+                        <div className="hidden-part1">
+                            <div>6</div>
+                            <div>7</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
                         <div className="hidden-part1-div">6.50</div>
-                    </div>
                 </div>
                 <hr className="table-hr" />
                 <div className="table-hidden-parts">
@@ -140,16 +140,16 @@ function Table() {
                             <span>felixhieronimus.com</span>
                         </div>
                     </div>
-                    <div className="hidden-part1">
-                        <div>6</div>
-                        <div>7</div>
-                        <div>7</div>
-                        <div>6</div>
+                        <div className="hidden-part1">
+                            <div>6</div>
+                            <div>7</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
                         <div className="hidden-part1-div">6.50</div>
-                    </div>
                 </div>
                 <hr className="table-hr" />
-                <div className="table-hidden-parts"   style={{ backgroundColor: "#F3F3F3" }}>
+                <div className="table-hidden-parts" style={{ backgroundColor: "#F3F3F3" }}>
                     <div className="table-hidden-part1">
                         <img className="table-hidden-img" src="https://assets.awwwards.com/awards/avatar/967413/610ba96922f65561003896.jpeg" alt="" />
                         <div>
@@ -157,13 +157,13 @@ function Table() {
                             <span>irene-butenko.com</span>
                         </div>
                     </div>
-                    <div className="hidden-part1">
-                        <div>6</div>
-                        <div>7</div>
-                        <div>7</div>
-                        <div>6</div>
+                        <div className="hidden-part1">
+                            <div>6</div>
+                            <div>7</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
                         <div className="hidden-part1-div">6.50</div>
-                    </div>
                 </div>
                 <hr className="table-hr" />
                 <div className="table-hidden-parts">
@@ -174,16 +174,16 @@ function Table() {
                             <span>marindessables.fr</span>
                         </div>
                     </div>
-                    <div className="hidden-part1">
-                        <div>6</div>
-                        <div>7</div>
-                        <div>7</div>
-                        <div>6</div>
+                        <div className="hidden-part1">
+                            <div>6</div>
+                            <div>7</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
                         <div className="hidden-part1-div">6.50</div>
-                    </div>
                 </div>
                 <hr className="table-hr" />
-           </div>
+            </div>
         </div>
     )
 }

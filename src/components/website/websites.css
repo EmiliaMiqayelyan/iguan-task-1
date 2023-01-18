@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+.websites>p {
+    margin: 0px 0px 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+
 .sites {
     padding-bottom: 60px;
     display: flex;
@@ -23,60 +29,60 @@
     width: 185px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-2 {
     width: 160px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-3 {
     width: 195px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-4 {
     width: 97px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-5 {
     width: 153px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-6 {
     width: 144px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .sites-btn-1:hover,
@@ -85,9 +91,9 @@
 .sites-btn-4:hover,
 .sites-btn-5:hover,
 .sites-btn-6:hover {
-    background-color: white;
-    color: #222222;
-    border: 1px solid black;
+    background-color: var(--color-white);
+    color: var(--light-black)22222;
+    border: 1px solid var(--color-black);
 }
 
 .lang-btn {
@@ -99,50 +105,50 @@
     width: 135px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .lang-btn-2 {
     width: 96px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .lang-btn-3 {
     width: 102px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .lang-btn-4 {
     width: 98px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .lang-btn-5 {
     width: 105px;
     height: 48px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 700;
     border: 1px solid #b7b7b7;
-    color: #222222;
+    color: var(--light-black);
 }
 
 .lang-btn-1:hover,
@@ -150,13 +156,25 @@
 .lang-btn-3,
 .lang-btn-4,
 .lang-btn-5 {
-    background-color: white;
-    color: #222222;
-    border: 1px solid black;
+    background-color: var(--color-white);
+    color: var(--light-black);
+    border: 1px solid var(--color-black);
+}
+
+@media screen and (max-width: 1023px) {
+    .websites {
+        padding: var(--pad-24);
+    }
 }
 
 @media screen and (max-width: 767px) {
     .sites-btn {
-        gap: 8px !important;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .websites {
+        padding: var(--pad-16);
     }
 }

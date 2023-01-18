@@ -1,5 +1,5 @@
 .middle {
-    width: 100%;
+    width: var(--width-100);
     height: auto;
     text-align: center;
     padding-top: 40px;
@@ -10,8 +10,20 @@
     font-size: 40px;
 }
 
+@media screen and (max-width: 1023px) {
+    .middle {
+        padding: var(--pad-24);
+    }
+}
+
 @media screen and (max-width: 767px) {
     .info {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .middle {
+        padding: var(--pad-16);
     }
 }

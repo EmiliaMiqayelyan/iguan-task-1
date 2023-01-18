@@ -1,4 +1,5 @@
 import "./footer.css";
+import "../global.css";
 import { FaRegCalendarMinus } from "react-icons/fa";
 
 
@@ -36,8 +37,8 @@ function Footer() {
                 <div className="next-part">
                     <span className="next-part-span">Next Conferences</span>
                     <FaRegCalendarMinus />
-                 <span className="footer-link">Amsterdam</span> and <span className="footer-link">Toronto</span>
-                </div> 
+                    <span className="footer-link">Amsterdam</span> and <span className="footer-link">Toronto</span>
+                </div>
             </div>
             <hr className="footer-hr" />
             <div className="footer-bottom">

@@ -1,4 +1,5 @@
 import "./loginmodal.css";
+import "../global.css";
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Icon from "react-icons-kit";
@@ -9,7 +10,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useForm } from "react-hook-form";
 import { arrows_exclamation } from "react-icons-kit/linea/arrows_exclamation";
 import { arrows_circle_check } from "react-icons-kit/linea/arrows_circle_check";
-
 
 function LoginModal({ show, hideModal }) {
   const regex = /^[[a-z]{2}[0-9][0-9]+@[a-z]+\.[a-z]{3}$/i;
@@ -43,11 +43,7 @@ function LoginModal({ show, hideModal }) {
 
   return (
     <>
-      <Modal
-        show={show}
-        size="xl"
-        centered
-      >
+      <Modal show={show} size="xl" centered>
         <Modal.Body className="modal-inner">
           <div className="login-close-btn">
             <button className="close-btn" onClick={() => hideModal()}>
